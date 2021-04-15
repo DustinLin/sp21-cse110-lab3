@@ -1,0 +1,70 @@
+h1 {
+    color: maroon;
+    width: 10em;
+    background-color: darkgreen;
+}
+
+h2 {
+    /* Count 1 of using absolute units */
+    color: #f267f2;
+    background-color: antiquewhite;
+    /* Count 1 of using relative units */
+    width: 20vw; 
+    height: 20vh;
+    max-width: 25vw;
+    max-height: 25vw;
+}
+
+h3 {
+    /* Count 2 of using absolute units */
+    color: hsl(0, 100, 50);
+}
+
+p {
+    color: rgb(10,20,40);
+}
+
+/*This is the clickable expandable text, not the text inside of it*/
+summary {
+    text-decoration:underline;
+}
+
+.centeredText {
+    text-align:center;
+}
+
+.video {
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    /*  border: 5px solid black; */
+    /* Count 3 of using absolute units */
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 1in;
+    margin-left: 1in;
+    display: inline-block;
+    position: static;
+}
+
+.video:hover{
+    border-color: yellow;
+}
+
+.video:active{
+    border-color: red;
+}
+
+.song {
+    position: sticky;
+}
+
+img {
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border: 5px dashed brown;
+    border-radius: 30cm ;
+    background-color: antiquewhite;
+    display:block;
+}
