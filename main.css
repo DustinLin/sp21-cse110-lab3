@@ -1,3 +1,15 @@
+* {
+    margin: 5px;
+}
+
+ol > li {
+   text-decoration: overline;
+}
+
+h1 + h3 {
+    margin-top: 0.25in;
+}
+
 h1 {
     color: maroon;
     width: 30em;
@@ -5,14 +17,16 @@ h1 {
 }
 
 h2 {
-    /* Count 1 of using absolute units */
     color: #f267f2;
     background-color: antiquewhite;
-    /* Count 1 of using relative units */
     width: 20vw; 
     height: 20vh;
     max-width: 25vw;
     max-height: 25vw;
+}
+
+p {
+    color: rgb(10,20,40);
 }
 
 @media screen and (max-width: 1000px ) {
@@ -21,17 +35,13 @@ h2 {
     }
 }
 
-h3 {
-    /* Count 2 of using absolute units */
-    color: hsl(0, 100, 50);
+.first-entry h3 {
+    background-color: hsl(0, 100%, 50%);
 }
 
-p {
-    color: rgb(10,20,40);
-}
 
 /*This is the clickable expandable text, not the text inside of it*/
-summary {
+summary, b {
     text-decoration:underline;
 }
 
@@ -44,7 +54,6 @@ summary {
     border-style: solid;
     border-color: black;
     /*  border: 5px solid black; */
-    /* Count 3 of using absolute units */
     padding-top: 5px;
     padding-right: 5px;
     padding-left: 5px;
@@ -64,8 +73,23 @@ summary {
     border-color: red;
 }
 
-.song {
+#song {
     position: sticky;
+}
+
+/* targets all the p's that are class "centeredText" */
+p.centeredText{
+    text-decoration:line-through;
+}
+
+
+
+a[href="https://en.wikipedia.org/wiki/Cuphead"] {
+    color: #BAA614;
+}
+
+#cuphead ~ p {
+    text-decoration: underline;
 }
 
 .flex-stars {
